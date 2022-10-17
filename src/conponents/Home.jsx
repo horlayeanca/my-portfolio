@@ -35,7 +35,7 @@ const Home = () => {
           </p>
           <div>
             <Link
-              to="portfolio"
+              to="Portfolio"
               smooth
               offset={-150}
               duration={500}
