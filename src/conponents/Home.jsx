@@ -6,27 +6,32 @@ import { Link } from "react-scroll/modules";
 const Home = () => {
   return (
     <div
-      name="home"
-      className="h-screen w-full bg-gradient-to-b from-sky-400 to-violet-300"
+      name="Home"
+      className="h-screen w-full bg-gradient-to-b from-sky-400 to-violet-300 pt-10"
     >
       <div
         className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full
-       px-4 md:flex-row text-white"
+       px-4 md:flex-row text-white pt-10"
       >
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+          <h2 className="text-4xl sm:text-7xl font-bold text-white sm:pt-4">
             I'm a Junior Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            My name is Faruq Adelodun, and I attend AltSchool Africa to study
+            software engineering. I live in Lagos. I work as a process engineer
+            in one of the well-known power plant in West Africa and Nigeria.
+            April 2022 marked the beginning of my software engineering career.
+            &nbsp;
+            <Link
+              to="About"
+              smooth
+              offset={100}
+              duration={500}
+              className="text-neutral-400 cursor-pointer hover:text-white"
+            >
+              load more..
+            </Link>
           </p>
           <div>
             <Link

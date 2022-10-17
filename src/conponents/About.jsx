@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div
-      name="about"
+      name="About"
       className="w-full h-screen bg-gradient-to-b from-violet-300 to-sky-400 text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
@@ -12,28 +12,21 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+        <p className="text-xl mt-10">
+          My name is Faruq Adelodun, and I attend AltSchool Africa to study
+          software engineering. I live in Lagos. I work as a process engineer in
+          one of the well-known power plant in West Africa and Nigeria. April
+          2022 marked the beginning of my software engineering career.
         </p>
         <br />
         <p className="text-xl">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          I want to excel as a frontend engineer worldwide. My favourite thing
+          to do has always been to translate designs into code. Since the
+          beginning of this adventure, I have built a few projects, and I am
+          eager to continue building fantastic products as I make the switch to
+          a full-time career in technology. I'm also trying to get an internship
+          position. Please let me know in the contact area if you have one for
+          me.
         </p>
       </div>
     </div>

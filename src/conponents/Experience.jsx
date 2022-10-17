@@ -62,12 +62,11 @@ const Experience = () => {
 
   return (
     <div
-      name="experience"
-      id="experience"
+      name="Experience"
       className="bg-gradient-to-b from-violet-300 to-sky-400 w-full h-screen"
     >
-      <div className="max-with-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <div className="pt-12">
+      <div className="max-with-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white lg:px-20">
+        <div className="">
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Experience
           </p>
