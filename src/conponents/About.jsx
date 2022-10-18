@@ -12,7 +12,7 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl mt-10">
+        <p className="text-xl">
           My name is Faruq Adelodun, and I attend AltSchool Africa to study
           software engineering. I live in Lagos. I work as a process engineer in
           one of the well-known power plant in West Africa and Nigeria. April
