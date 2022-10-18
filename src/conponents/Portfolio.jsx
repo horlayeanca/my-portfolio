@@ -67,7 +67,7 @@ const Portfolio = () => {
                   rel="noreferrer"
                   className="w-1/2 text-center px-6 py-3 m-4 duration-200 hover:scale-105"
                 >
-                  Code
+                  View Project
                 </a>
               </div>
             </div>
