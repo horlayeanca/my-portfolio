@@ -11,22 +11,22 @@ const Portfolio = () => {
     {
       id: 1,
       src: phonie,
-      href: "https://github.com/horlayeanca/Phonie_app",
+      href: "https://spectacular-mooncake-a3ddc8.netlify.app/",
     },
     {
       id: 2,
       src: bootstrap,
-      href: "https://github.com/horlayeanca/my-repo",
+      href: "https://vocal-moxie-dffd08.netlify.app/",
     },
     {
       id: 3,
       src: toggleButton,
-      href: "https://github.com/horlayeanca/toggle_button",
+      href: "https://sunny-piroshki-d47332.netlify.app/",
     },
     {
       id: 4,
       src: formTwo,
-      href: "https://github.com/horlayeanca/sign-in-form_flip",
+      href: "https://beamish-basbousa-3bf6cb.netlify.app/",
     },
     {
       id: 5,
@@ -36,7 +36,7 @@ const Portfolio = () => {
     {
       id: 6,
       src: form,
-      href: "https://github.com/horlayeanca/my-form",
+      href: "https://horlayeanca.github.io/neww/",
     },
   ];
 
