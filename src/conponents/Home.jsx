@@ -14,7 +14,7 @@ const Home = () => {
           <h2 className="text-4xl sm:text-7xl font-bold text-gray-600 sm:pt-4">
             I'm a Junior Developer
           </h2>
-          <p className="text-gray-500 py-4 max-w-md text-justify">
+          <p className="text-black py-4 max-w-md text-justify">
             My name is Faruq Adelodun, and I attend AltSchool Africa to study
             software engineering. I live in Lagos. I work as a process engineer
             in one of the well-known power plant in West Africa and Nigeria.
