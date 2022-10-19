@@ -2,24 +2,21 @@ import React from "react";
 
 const About = () => {
   return (
-    <div
-      name="About"
-      className="w-full h-screen bg-gradient-to-b from-violet-300 to-sky-400 text-white"
-    >
+    <div name="About" className="w-full h-screen bg-neutral-100 text-black">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+        <div className="pb-8 text-center">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 text-center">
             About
           </p>
         </div>
-        <p className="text-xl">
+        <p className="text-xl text-justify">
           My name is Faruq Adelodun, and I attend AltSchool Africa to study
           software engineering. I live in Lagos. I work as a process engineer in
           one of the well-known power plant in West Africa and Nigeria. April
           2022 marked the beginning of my software engineering career.
         </p>
         <br />
-        <p className="text-xl">
+        <p className="text-xl text-justify">
           I want to excel as a frontend engineer worldwide. My favourite thing
           to do has always been to translate designs into code. Since the
           beginning of this adventure, I have built a few projects, and I am

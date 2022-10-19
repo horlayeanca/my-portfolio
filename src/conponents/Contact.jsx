@@ -5,11 +5,11 @@ const Contact = () => {
   return (
     <div
       name="Contact"
-      className="w-full h-screen bg-gradient-to-b from-sky-400 to-violet-300 p-4 text-white pt-20 md:pt-0 lg:pt-0"
+      className="w-full h-screen bg-neutral-100 p-4 text-black pt-20 md:pt-0 lg:pt-0"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full pt-20 md:pt-0 lg:pt-0">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500 pt-20 md:pt-0 lg:pt-0">
+        <div className="pb-8 text-center">
+          <p className="text-4xl text-center font-bold inline border-b-4 border-gray-500 pt-20 md:pt-0 lg:pt-0">
             Contact
           </p>
           <p className="py-6">Submit the form below to get in touch with me.</p>
@@ -25,21 +25,21 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none"
             />
             <input
               type="text"
               name="email"
               placeholder="Enter your email"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none my-4"
+              className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none my-4"
             />
             <textarea
               name="message"
               rows="10"
               placeholder="Type your message here..."
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none"
             ></textarea>
-            <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button className="text-white px-6 py-3 my-8 mx-auto flex items-center bg-gradient-to-tr from-cyan-500 to-blue-500 rounded-md hover:scale-110 duration-300">
               Submit
               <span className="text-white">
                 <BiMailSend size={20} className="ml-2" />

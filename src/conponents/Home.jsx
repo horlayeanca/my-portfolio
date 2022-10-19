@@ -5,19 +5,16 @@ import { Link } from "react-scroll/modules";
 
 const Home = () => {
   return (
-    <div
-      name="Home"
-      className="h-screen w-full bg-gradient-to-b from-sky-400 to-violet-300 pt-10"
-    >
+    <div name="Home" className="h-screen w-full bg-neutral-100 pt-10">
       <div
         className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full
        px-4 md:flex-row text-white pt-10"
       >
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white sm:pt-4">
+          <h2 className="text-4xl sm:text-7xl font-bold text-gray-600 sm:pt-4">
             I'm a Junior Developer
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
+          <p className="text-gray-500 py-4 max-w-md text-justify">
             My name is Faruq Adelodun, and I attend AltSchool Africa to study
             software engineering. I live in Lagos. I work as a process engineer
             in one of the well-known power plant in West Africa and Nigeria.
@@ -52,7 +49,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="profile"
-            className="rounded-2xl mx-auto w-2/4 md:full"
+            className="rounded-3xl mx-auto w-1/3"
           />
         </div>
       </div>

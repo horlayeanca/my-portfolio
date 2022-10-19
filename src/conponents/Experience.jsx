@@ -14,43 +14,43 @@ const Experience = () => {
       id: 1,
       src: Html,
       title: "HTML",
-      style: "shadow-orange-500",
+      style: "shadow-orange-300",
     },
     {
       id: 2,
       src: Css,
       title: "CSS",
-      style: "shadow-blue-500",
+      style: "shadow-blue-300",
     },
     {
       id: 3,
       src: JavaScript,
       title: "JavaScript",
-      style: "shadow-yellow-500",
+      style: "shadow-yellow-300",
     },
     {
       id: 4,
       src: ReactImage,
       title: "React",
-      style: "shadow-blue-600",
+      style: "shadow-blue-400",
     },
     {
       id: 5,
       src: Tailwind,
       title: "Tailwind",
-      style: "shadow-sky-600",
+      style: "shadow-sky-400",
     },
     {
       id: 6,
       src: bootstrap,
       title: "Bootstrap",
-      style: "shadow-pink-400",
+      style: "shadow-pink-300",
     },
     {
       id: 7,
       src: versionControl,
       title: "Version Control",
-      style: "shadow-stone-800",
+      style: "shadow-stone-500",
     },
     {
       id: 8,
@@ -63,11 +63,11 @@ const Experience = () => {
   return (
     <div
       name="Experience"
-      className="bg-gradient-to-b from-violet-300 to-sky-400 w-full h-screen pt-20 md:pt-0 lg:pt-0"
+      className="bg-neutral-100 w-full h-screen pt-20 md:pt-0 lg:pt-0"
     >
-      <div className="max-with-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white lg:px-20 pt-20 md:pt-0 lg:pt-0">
-        <div className="">
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+      <div className="max-with-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-black lg:px-20 pt-20 md:pt-0 lg:pt-0">
+        <div className="text-center">
+          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline text-center">
             Experience
           </p>
           <p className="py-6">These are the technologies I've worked with.</p>
