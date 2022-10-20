@@ -13,7 +13,7 @@ const SocialLinks = () => {
         </>
       ),
       href: "https://linkedin.com",
-      style: "rounded-tr-md",
+      style: "rounded-tr-md hover:bg-blue-500 duration-400",
     },
     {
       id: 2,
@@ -23,6 +23,7 @@ const SocialLinks = () => {
         </>
       ),
       href: "https://github.com/horlayeanca",
+      style: "hover:bg-slate-700 duration-400",
     },
     {
       id: 3,
@@ -32,6 +33,8 @@ const SocialLinks = () => {
         </>
       ),
       href: "mailto:adelodunfaruq@gmail.com",
+      style:
+        "hover:bg-gradient-to-b from-purple-500 to-indigo-400 duration-400",
     },
     {
       id: 4,
@@ -41,7 +44,8 @@ const SocialLinks = () => {
         </>
       ),
       href: "/resume.pdf",
-      style: "rounded-br-md",
+      style:
+        "rounded-br-md hover:bg-gradient-to-b from-green-400 to-sky-400 duration-400",
       download: true,
     },
   ];

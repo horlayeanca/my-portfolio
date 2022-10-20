@@ -25,7 +25,7 @@ const Home = () => {
               smooth
               offset={100}
               duration={500}
-              className="text-neutral-400 cursor-pointer hover:text-white"
+              className="text-neutral-400 cursor-pointer hover:text-blue-500"
             >
               load more..
             </Link>
@@ -49,7 +49,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="profile"
-            className="rounded-3xl mx-auto w-1/3"
+            className="rounded-full mx-auto w-2/3"
           />
         </div>
       </div>
