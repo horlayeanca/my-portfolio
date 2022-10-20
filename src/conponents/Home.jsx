@@ -49,7 +49,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="profile"
-            className="rounded-full mx-auto w-2/3"
+            className="rounded-full mx-auto w-2/3 md:hover:scale-90 duration-300"
           />
         </div>
       </div>
