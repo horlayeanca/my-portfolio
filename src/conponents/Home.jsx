@@ -27,7 +27,7 @@ const Home = () => {
               duration={500}
               className="text-neutral-400 cursor-pointer hover:text-blue-500"
             >
-              load more..
+              load more...
             </Link>
           </p>
           <div>
