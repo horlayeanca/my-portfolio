@@ -25,7 +25,7 @@ const Home = () => {
               smooth
               offset={100}
               duration={500}
-              className="text-neutral-400 text-clip cursor-pointer hover:text-blue-500"
+              className="text-neutral-400 tracking-widest cursor-pointer hover:text-blue-500"
             >
               load more...
             </Link>
