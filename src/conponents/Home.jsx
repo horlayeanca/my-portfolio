@@ -34,7 +34,7 @@ const Home = () => {
             <Link
               to="Portfolio"
               smooth
-              offset={-150}
+              offset={250}
               duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-tr from-cyan-500 to-blue-500 cursor-pointer"
             >
