@@ -63,7 +63,7 @@ const NavBar = () => {
                 onClick={() => setNav(!nav)}
                 to={link}
                 smooth
-                offset={50}
+                offset={150}
                 duration={500}
               >
                 {link}
