@@ -23,7 +23,7 @@ const About = () => {
           eager to continue building fantastic products as I make the switch to
           a full-time career in technology. I'm also trying to get an internship
           position. Please let me know in the contact area if you have one for
-          me.
+          me...
         </p>
       </div>
     </div>
