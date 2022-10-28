@@ -61,7 +61,7 @@ const Experience = () => {
   ];
 
   return (
-    <div name="Experience" className="bg-neutral-100 w-full h-screen">
+    <div name="Experience" className="bg-neutral-100 w-full h-screen lg:py-10">
       <div className="max-with-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-black">
         <div className="text-center">
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline text-center">
