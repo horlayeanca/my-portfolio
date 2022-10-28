@@ -61,13 +61,10 @@ const Experience = () => {
   ];
 
   return (
-    <div
-      name="Experience"
-      className="bg-neutral-100 w-full h-screen pt-20 sm:pt-48"
-    >
-      <div className="max-with-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-black sm:px-20 pt-20 lg:pt-40">
-        <div className="text-center sm:pt-40">
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline text-center sm:pt-40">
+    <div name="Experience" className="bg-neutral-100 w-full h-screen">
+      <div className="max-with-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-black">
+        <div className="text-center">
+          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline text-center">
             Experience
           </p>
           <p className="py-6">These are the technologies I've worked with.</p>

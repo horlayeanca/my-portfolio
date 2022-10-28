@@ -5,10 +5,13 @@ const Contact = () => {
   return (
     <div
       name="Contact"
-      className="w-full h-screen bg-neutral-100 p-4 text-black pt-24 sm:pt-44"
+      className="w-full h-screen bg-neutral-100 p-4 text-black"
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full pt-20 sm:pt-48">
-        <div className="pb-8 text-center pt-20 sm:pt-44">
+      <div
+        className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full sm:py-20
+      "
+      >
+        <div className="pb-8 text-center">
           <p className="text-4xl text-center font-bold inline border-b-4 border-gray-500 ">
             Contact
           </p>
