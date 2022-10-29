@@ -44,6 +44,16 @@ const Portfolio = () => {
       src: activeStates,
       href: "https://fascinating-sfogliatella-709a4b.netlify.app",
     },
+    {
+      id: 6,
+      src: activeStates,
+      href: "https://fascinating-sfogliatella-709a4b.netlify.app",
+    },
+    {
+      id: 6,
+      src: activeStates,
+      href: "https://fascinating-sfogliatella-709a4b.netlify.app",
+    },
   ];
 
   return (
