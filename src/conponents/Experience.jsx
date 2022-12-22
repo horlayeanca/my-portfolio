@@ -7,6 +7,7 @@ import Github from "../assets/github.png";
 import bootstrap from "../assets/bootstrap.png";
 import Tailwind from "../assets/tailwind.png";
 import versionControl from "../assets/versionControl.png";
+import VueJs from "../assets/VueJs.png";
 
 const Experience = () => {
   const techs = [
@@ -57,6 +58,12 @@ const Experience = () => {
       src: Github,
       title: "Github",
       style: "shadow-gray-400",
+    },
+    {
+      id: 9,
+      src: VueJs,
+      title: "VueJs",
+      style: "shadow-green-400",
     },
   ];
 
