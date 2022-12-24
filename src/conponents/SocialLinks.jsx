@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFillPersonLinesFill, BsTwitter } from "react-icons/bs";
 
 const SocialLinks = () => {
   const links = [
@@ -24,6 +24,16 @@ const SocialLinks = () => {
       ),
       href: "https://github.com/horlayeanca",
       style: "hover:bg-slate-700 duration-400",
+    },
+    {
+      id: 2,
+      child: (
+        <>
+          Twitter <BsTwitter size={30} />
+        </>
+      ),
+      href: "https://twitter.com/Horlayeanca02",
+      style: "hover:bg-blue-500 duration-400",
     },
     {
       id: 3,
