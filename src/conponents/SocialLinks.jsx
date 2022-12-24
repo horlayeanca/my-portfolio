@@ -46,7 +46,7 @@ const SocialLinks = () => {
       href: "/resume.pdf",
       style:
         "rounded-br-md hover:bg-gradient-to-b from-green-400 to-sky-400 duration-400",
-      download: true,
+      download: false,
     },
   ];
 
