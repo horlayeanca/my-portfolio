@@ -6,6 +6,7 @@ import formTwo from "../assets/portfolio/formTwo.jpeg";
 import calculator from "../assets/portfolio/calculator.png";
 import form from "../assets/portfolio/form.jpeg";
 import activeStates from "../assets/portfolio/activeStates.jpg";
+import quiz from "../assets/portfolio/quiz.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -46,8 +47,8 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      src: activeStates,
-      href: "https://fascinating-sfogliatella-709a4b.netlify.app",
+      src: quiz,
+      href: "https://cool-hummingbird-616118.netlify.app/",
     },
     {
       id: 6,
