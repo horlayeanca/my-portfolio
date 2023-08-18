@@ -7,6 +7,7 @@ import calculator from "../assets/portfolio/calculator.png";
 import form from "../assets/portfolio/form.jpeg";
 import activeStates from "../assets/portfolio/activeStates.jpg";
 import quiz from "../assets/portfolio/quiz.png";
+import { Helmet } from "react-helmet";
 
 const Portfolio = () => {
   const portfolios = [
@@ -59,6 +60,10 @@ const Portfolio = () => {
 
   return (
     <div name="Portfolio" className="bg-neutral-100 w-full text-black h-full">
+      <Helmet>
+        <title>Portfolio</title>
+        <meta name="description" content="Portfolio" />
+      </Helmet>
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 text-center">
           <p className="text-4xl text-center font-bold inline border-b-4 border-gray-500">
