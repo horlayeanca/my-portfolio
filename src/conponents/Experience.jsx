@@ -8,6 +8,7 @@ import bootstrap from "../assets/bootstrap.png";
 import Tailwind from "../assets/tailwind.png";
 import versionControl from "../assets/versionControl.png";
 import VueJs from "../assets/VueJs.png";
+import { Helmet } from "react-helmet";
 
 const Experience = () => {
   const techs = [
@@ -69,6 +70,10 @@ const Experience = () => {
 
   return (
     <div name="Experience" className="bg-neutral-100 w-full h-full">
+      <Helmet>
+        <title> Faruq Adelodun | Experience </title>
+        <meta name="description" content="Faruq Adelodun's experience" />
+      </Helmet>
       <div className="max-with-screen-lg mx-auto p-4 flex flex-col justify-center w-full text-black lg:py-20">
         <div className="text-center">
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline text-center">
