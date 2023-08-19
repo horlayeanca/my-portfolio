@@ -9,6 +9,24 @@ import todoApp from "../assets/portfolio/todoApp.png";
 import scissor from "../assets/portfolio/scissor.png";
 import quiz from "../assets/portfolio/quiz.png";
 import { Helmet } from "react-helmet";
+import { motion, Variants } from "framer-motion";
+
+const portfolioVariants: Variants = {
+  offscreen: {
+    x: "-100vw",
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 2,
+      ease: "easeInOut",
+    },
+  },
+};
 
 const Portfolio = () => {
   const portfolios = [
@@ -66,33 +84,52 @@ const Portfolio = () => {
         <meta name="description" content="Portfolio" />
       </Helmet>
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8 text-center">
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 1 }}
+          className="pb-8 text-center"
+        >
           <p className="text-4xl text-center font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
           <p className="py-6">Check out some of my work here.</p>
-        </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        </motion.div>
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 1 }}
+          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0"
+        >
           {portfolios.map(({ id, src, href }) => (
-            <div key={id} className="shadow-md shadow-gray-300 rounded-lg">
-              <img
+            <motion.div
+              variants={portfolioVariants}
+              key={id}
+              className="shadow-md shadow-gray-300 rounded-lg"
+            >
+              <motion.img
+                variants={portfolioVariants}
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className="flex items-center justify-center">
-                <a
+              <motion.div
+                variants={portfolioVariants}
+                className="flex items-center justify-center"
+              >
+                <motion.a
+                  variants={portfolioVariants}
                   href={href}
                   target="_blank"
                   rel="noreferrer"
                   className="w-1/2 text-center px-6 py-3 m-4 duration-200 hover:scale-105"
                 >
                   View Project
-                </a>
-              </div>
-            </div>
+                </motion.a>
+              </motion.div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
