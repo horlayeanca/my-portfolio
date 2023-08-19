@@ -22,7 +22,7 @@ const experienceVariants: Variants = {
     transition: {
       type: "spring",
       bounce: 0.4,
-      duration: 2,
+      duration: 1,
       ease: "easeInOut",
     },
   },
@@ -95,7 +95,7 @@ const Experience = () => {
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
         className="max-with-screen-lg mx-auto p-4 flex flex-col justify-center w-full text-black lg:py-20"
       >
         <motion.div variants={experienceVariants} className="text-center">

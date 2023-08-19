@@ -87,7 +87,7 @@ const Portfolio = () => {
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="pb-8 text-center"
         >
           <p className="text-4xl text-center font-bold inline border-b-4 border-gray-500">
@@ -98,7 +98,7 @@ const Portfolio = () => {
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0"
         >
           {portfolios.map(({ id, src, href }) => (
