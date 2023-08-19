@@ -1,6 +1,17 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { BiMailSend } from "react-icons/bi";
+import { motion } from "framer-motion";
+
+const buttonVariants = {
+  hover: {
+    scale: 1.5,
+    transition: {
+      duration: 0.5,
+      yoyo: Infinity,
+    },
+  },
+};
 
 const Contact = () => {
   return (
@@ -47,12 +58,16 @@ const Contact = () => {
                 placeholder="Type your message here..."
                 className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none"
               ></textarea>
-              <button className="text-white px-6 py-3 my-8 mx-auto flex items-center bg-gradient-to-tr from-cyan-500 to-blue-500 rounded-md hover:scale-110 duration-300">
+              <motion.button
+                variants={buttonVariants}
+                whileHover="hover"
+                className="text-white px-6 py-3 my-8 mx-auto flex items-center bg-gradient-to-tr from-cyan-500 to-blue-500 rounded-md "
+              >
                 Submit
                 <span className="text-white">
                   <BiMailSend size={20} className="ml-2" />
                 </span>
-              </button>
+              </motion.button>
             </form>
           </div>
         </div>

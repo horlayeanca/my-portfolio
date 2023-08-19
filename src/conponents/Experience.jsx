@@ -9,6 +9,24 @@ import Tailwind from "../assets/tailwind.png";
 import versionControl from "../assets/versionControl.png";
 import VueJs from "../assets/VueJs.png";
 import { Helmet } from "react-helmet";
+import { motion, Variants } from "framer-motion";
+
+const experienceVariants: Variants = {
+  offscreen: {
+    x: "-100vw",
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 2,
+      ease: "easeInOut",
+    },
+  },
+};
 
 const Experience = () => {
   const techs = [
@@ -74,15 +92,23 @@ const Experience = () => {
         <title> Faruq Adelodun | Experience </title>
         <meta name="description" content="Faruq Adelodun's experience" />
       </Helmet>
-      <div className="max-with-screen-lg mx-auto p-4 flex flex-col justify-center w-full text-black lg:py-20">
-        <div className="text-center">
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 1 }}
+        className="max-with-screen-lg mx-auto p-4 flex flex-col justify-center w-full text-black lg:py-20"
+      >
+        <motion.div variants={experienceVariants} className="text-center">
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline text-center">
             Experience
           </p>
           <p className="py-6">These are the technologies I've worked with.</p>
-        </div>
+        </motion.div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-10 sm:px-40">
+        <motion.div
+          variants={experienceVariants}
+          className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-10 sm:px-40"
+        >
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
@@ -92,8 +118,8 @@ const Experience = () => {
               <p className="mt-4">{title}</p>
             </div>
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
