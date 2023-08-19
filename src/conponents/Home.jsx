@@ -3,6 +3,7 @@ import HeroImage from "../assets/profile.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll/modules";
 import { Helmet } from "react-helmet";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -23,10 +24,20 @@ const Home = () => {
           className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full
        px-4 md:flex-row text-white pt-10"
         >
-          <div className="flex flex-col justify-center h-full">
-            <h2 className="text-4xl sm:text-7xl font-bold text-gray-600 sm:pt-4">
+          <motion.div
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+            className="flex flex-col justify-center h-full"
+          >
+            <motion.h2
+              initial={{ hidden: true, opacity: 0, pathLength: 0 }}
+              animate={{ opacity: 1, pathLength: 1 }}
+              transition={{ duration: 2, ease: "easeInOut" }}
+              className="text-4xl sm:text-7xl font-bold text-gray-600 sm:pt-4"
+            >
               I'm a Junior Developer
-            </h2>
+            </motion.h2>
             <p className="text-black py-4 max-w-md text-justify">
               My name is Faruq Adelodun, and I attend AltSchool Africa to study
               software engineering. I live in Lagos. I work as a process
@@ -57,14 +68,18 @@ const Home = () => {
                 </span>
               </Link>
             </div>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ x: "100vw" }}
+            animate={{ x: 0, rotate: 360 }}
+            transition={{ duration: 1 }}
+          >
             <img
               src={HeroImage}
               alt="profile"
               className="rounded-full mx-auto w-2/3 md:hover:scale-90 duration-300"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

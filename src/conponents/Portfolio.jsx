@@ -1,11 +1,12 @@
 import React from "react";
 import phonie from "../assets/portfolio/phonie.png";
 import bootstrap from "../assets/portfolio/bootstrap.jpeg";
-import toggleButton from "../assets/portfolio/toggleButton.jpeg";
 import formTwo from "../assets/portfolio/formTwo.jpeg";
 import calculator from "../assets/portfolio/calculator.png";
 import form from "../assets/portfolio/form.jpeg";
 import activeStates from "../assets/portfolio/activeStates.jpg";
+import todoApp from "../assets/portfolio/todoApp.png";
+import scissor from "../assets/portfolio/scissor.png";
 import quiz from "../assets/portfolio/quiz.png";
 import { Helmet } from "react-helmet";
 
@@ -23,8 +24,8 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      src: toggleButton,
-      href: "https://sunny-piroshki-d47332.netlify.app/",
+      src: scissor,
+      href: "https://scissor-af7b6.web.app/",
     },
     {
       id: 4,
@@ -43,8 +44,8 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      src: activeStates,
-      href: "https://fascinating-sfogliatella-709a4b.netlify.app",
+      src: todoApp,
+      href: "https://my-daily-task-app.netlify.app/",
     },
     {
       id: 6,
