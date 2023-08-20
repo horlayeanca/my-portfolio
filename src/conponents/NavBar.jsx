@@ -44,7 +44,7 @@ const NavBar = () => {
       <motion.ul
         initial={{ y: -250 }}
         animate={{ y: -5 }}
-        transition={{ delay: 0.2, type: "spring", stiffness: 50 }}
+        transition={{ delay: 0.2, type: "spring", stiffness: 80 }}
         className="hidden md:flex"
       >
         {links.map(({ id, link }) => (

@@ -13,17 +13,18 @@ import { motion, Variants } from "framer-motion";
 
 const portfolioVariants: Variants = {
   offscreen: {
-    x: "-100vw",
+    y: "150vh",
     opacity: 0,
   },
   onscreen: {
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: {
       type: "spring",
       bounce: 0.4,
-      duration: 2,
-      ease: "easeInOut",
+      stiffness: 100,
+      duration: 1,
+      ease: "fadeInUp",
     },
   },
 };
@@ -83,54 +84,44 @@ const Portfolio = () => {
         <title>Portfolio</title>
         <meta name="description" content="Portfolio" />
       </Helmet>
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <motion.div
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true, amount: 0.5 }}
-          className="pb-8 text-center"
-        >
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.5 }}
+        className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full"
+      >
+        <motion.div variants={portfolioVariants} className="pb-8 text-center">
           <p className="text-4xl text-center font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
           <p className="py-6">Check out some of my work here.</p>
         </motion.div>
         <motion.div
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true, amount: 0.5 }}
+          variants={portfolioVariants}
+          //  viewport={{ once: true, amount: 0.5 }}
           className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0"
         >
           {portfolios.map(({ id, src, href }) => (
-            <motion.div
-              variants={portfolioVariants}
-              key={id}
-              className="shadow-md shadow-gray-300 rounded-lg"
-            >
-              <motion.img
-                variants={portfolioVariants}
+            <div key={id} className="shadow-md shadow-gray-300 rounded-lg">
+              <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <motion.div
-                variants={portfolioVariants}
-                className="flex items-center justify-center"
-              >
-                <motion.a
-                  variants={portfolioVariants}
+              <div className="flex items-center justify-center">
+                <a
                   href={href}
                   target="_blank"
                   rel="noreferrer"
                   className="w-1/2 text-center px-6 py-3 m-4 duration-200 hover:scale-105"
                 >
                   View Project
-                </motion.a>
-              </motion.div>
-            </motion.div>
+                </a>
+              </div>
+            </div>
           ))}
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 };
