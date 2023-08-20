@@ -23,6 +23,7 @@ const experienceVariants: Variants = {
       type: "spring",
       bounce: 0.4,
       duration: 1,
+      stiffness: 20,
       ease: "easeInOut",
     },
   },

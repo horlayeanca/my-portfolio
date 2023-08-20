@@ -25,9 +25,15 @@ const Home = () => {
        px-4 md:flex-row text-white pt-10"
         >
           <motion.div
-            initial={{ x: "-100vw" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 1 }}
+            initial={{ x: "-100vw", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 20,
+              ease: "easeInOut",
+              delay: 0.5,
+            }}
             className="flex flex-col justify-center h-full"
           >
             <motion.h2
@@ -70,9 +76,9 @@ const Home = () => {
             </div>
           </motion.div>
           <motion.div
-            initial={{ x: "100vw" }}
-            animate={{ x: 0, rotate: 360 }}
-            transition={{ duration: 1 }}
+            initial={{ x: "100vw", opacity: 0 }}
+            animate={{ x: 0, rotate: 360, opacity: 1 }}
+            transition={{ duration: 1, stiffness: 20 }}
           >
             <img
               src={HeroImage}

@@ -22,7 +22,7 @@ const portfolioVariants: Variants = {
     transition: {
       type: "spring",
       bounce: 0.4,
-      stiffness: 100,
+      stiffness: 20,
       duration: 1,
       ease: "fadeInUp",
     },

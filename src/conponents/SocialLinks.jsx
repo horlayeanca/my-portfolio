@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill, BsTwitter } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const SocialLinks = () => {
   const links = [
@@ -61,7 +62,18 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+    <motion.div
+      initial={{ x: "-100vw", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{
+        duration: 1,
+        type: "spring",
+        stiffness: 15,
+        ease: "easeInOut",
+        delay: 0.5,
+      }}
+      className="hidden lg:flex flex-col top-[35%] left-0 fixed"
+    >
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
@@ -84,7 +96,7 @@ const SocialLinks = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 
